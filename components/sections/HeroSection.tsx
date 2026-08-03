@@ -22,8 +22,8 @@ export default function HeroSection() {
           <div className="flex-1 flex flex-col items-start text-start max-w-2xl">
             <Badge className="mb-6">نظام إدارة العيادات</Badge>
             <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-primary leading-[1.15] sm:text-6xl lg:text-7xl">
-              {title.split('منصة واحدة')[0]} 
-              <span className="text-accent block mt-2">منصة واحدة</span>
+              {title.split('بذكاء')[0]} 
+              <span className="text-accent block mt-2">بذكاء</span>
             </h1>
             <p className="mb-10 text-lg text-foreground/70 sm:text-xl leading-relaxed max-w-xl">
               {description}
