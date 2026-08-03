@@ -30,11 +30,17 @@ export default function FaqSection() {
                 <button
                   onClick={() => toggleOpen(idx)}
                   className="w-full flex items-center justify-between p-6 bg-white hover:bg-neutral-dark/5 text-right transition-colors"
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${idx}`}
+                  id={`faq-question-${idx}`}
                 >
                   <span className="font-bold text-lg text-primary">{faq.q}</span>
                   <ChevronDown className={`w-5 h-5 text-accent shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
                 </button>
                 <div 
+                  id={`faq-answer-${idx}`}
+                  role="region"
+                  aria-labelledby={`faq-question-${idx}`}
                   className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${
                     isOpen ? 'max-h-48 py-4 opacity-100 border-t border-neutral-dark/10' : 'max-h-0 py-0 opacity-0'
                   }`}

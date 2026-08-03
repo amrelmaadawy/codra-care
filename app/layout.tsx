@@ -17,6 +17,28 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Codra Care - نظام إدارة العيادات",
   description: "نظام متكامل لإدارة العيادات الطبية، المواعيد، والسجلات المرضية بكفاءة عالية.",
+  openGraph: {
+    title: "Codra Care - نظام إدارة العيادات",
+    description: "نظام متكامل لإدارة العيادات الطبية، المواعيد، والسجلات المرضية بكفاءة عالية.",
+    url: 'https://codracare.com',
+    siteName: 'Codra Care',
+    images: [
+      {
+        url: 'https://codracare.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Codra Care Dashboard Preview',
+      },
+    ],
+    locale: 'ar_SA',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Codra Care - نظام إدارة العيادات',
+    description: 'نظام متكامل لإدارة العيادات الطبية بكفاءة عالية.',
+    images: ['https://codracare.com/og-image.jpg'],
+  },
 };
 
 export default function RootLayout({

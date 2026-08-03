@@ -26,14 +26,33 @@ export default function SystemPreviewSection() {
         <SectionHeading title={title} description={description} centered />
 
         {/* Tabs Navigation */}
-        <div className="flex flex-nowrap items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 mb-12 scrollbar-hide">
+        <div 
+          role="tablist" 
+          aria-label="System Features"
+          className="flex flex-nowrap items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 mb-12 scrollbar-hide"
+        >
           {tabs.map((tab) => {
             const Icon = iconMap[tab.id];
             const isActive = activeTab === tab.id;
             return (
               <button
                 key={tab.id}
+                id={`tab-${tab.id}`}
+                role="tab"
+                aria-selected={isActive}
+                aria-controls={`panel-${tab.id}`}
+                tabIndex={isActive ? 0 : -1}
                 onClick={() => setActiveTab(tab.id)}
+                onKeyDown={(e) => {
+                  if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+                    const currentIndex = tabs.findIndex(t => t.id === tab.id);
+                    const nextIndex = e.key === 'ArrowRight' 
+                      ? (currentIndex + 1) % tabs.length 
+                      : (currentIndex - 1 + tabs.length) % tabs.length;
+                    setActiveTab(tabs[nextIndex].id);
+                    document.getElementById(`tab-${tabs[nextIndex].id}`)?.focus();
+                  }
+                }}
                 className={cn(
                   "flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap",
                   isActive 
@@ -57,6 +76,10 @@ export default function SystemPreviewSection() {
             return (
               <div 
                 key={tab.id}
+                id={`panel-${tab.id}`}
+                role="tabpanel"
+                aria-labelledby={`tab-${tab.id}`}
+                hidden={!isActive}
                 className={cn(
                   "absolute inset-0 p-8 flex flex-col transition-all duration-500 ease-in-out",
                   isActive ? "opacity-100 translate-y-0 z-10" : "opacity-0 translate-y-8 z-0 pointer-events-none"
