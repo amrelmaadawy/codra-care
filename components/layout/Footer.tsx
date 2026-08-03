@@ -73,8 +73,10 @@ export default function Footer() {
           {/* Brand & Social */}
           <div className="lg:col-span-2 flex flex-col gap-8">
             <Link href="/" className="flex items-center gap-2">
-              <Stethoscope className="h-8 w-8 text-primary" />
-              <span className="text-3xl font-bold text-primary tracking-tight">ClinicFlow</span>
+              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                <Stethoscope className="text-white w-7 h-7" />
+              </div>
+              <span className="text-3xl font-bold text-primary tracking-tight">Codra Care</span>
             </Link>
             <p className="text-lg text-foreground/70 max-w-sm">
               نظام متكامل لإدارة العيادات الطبية بكفاءة عالية، مما يتيح لك التفرغ التام لرعاية مرضاك.
@@ -135,7 +137,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 pt-8 border-t border-neutral-dark/20 text-center text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} ClinicFlow. جميع الحقوق محفوظة.</p>
+          <p>&copy; {new Date().getFullYear()} Codra Care. جميع الحقوق محفوظة.</p>
         </div>
       </Container>
     </footer>

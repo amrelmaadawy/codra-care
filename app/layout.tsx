@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClinicFlow - نظام إدارة العيادات",
+  title: "Codra Care - نظام إدارة العيادات",
   description: "نظام متكامل لإدارة العيادات الطبية، المواعيد، والسجلات المرضية بكفاءة عالية.",
 };
 

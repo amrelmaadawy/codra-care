@@ -4,9 +4,10 @@ import FeaturesSection from '@/components/sections/FeaturesSection';
 import SystemPreviewSection from '@/components/sections/SystemPreviewSection';
 import AiSection from '@/components/sections/AiSection';
 import WorkflowSection from '@/components/sections/WorkflowSection';
+import SolutionsSection from '@/components/sections/SolutionsSection';
 
 export const metadata = {
-  title: 'ClinicFlow - إدارة عيادتك بسهولة',
+  title: 'Codra Care - إدارة عيادتك بسهولة',
   description: 'نظام متكامل لإدارة العيادات الطبية، المواعيد، والسجلات المرضية بكفاءة عالية.',
 };
 
@@ -19,6 +20,7 @@ export default function MarketingPage() {
       <SystemPreviewSection />
       <AiSection />
       <WorkflowSection />
+      <SolutionsSection />
       {/* TODO: Add TestimonialsSection, PricingSection */}
     </div>
   );

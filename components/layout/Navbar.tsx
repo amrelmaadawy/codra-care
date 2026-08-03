@@ -51,8 +51,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-50">
-            <Stethoscope className="h-7 w-7 text-primary" />
-            <span className="text-2xl font-bold text-primary tracking-tight">ClinicFlow</span>
+            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+              <Stethoscope className="text-white w-6 h-6" />
+            </div>
+            <span className="text-2xl font-bold text-primary tracking-tight">Codra Care</span>
           </Link>
 
           {/* Desktop Navigation */}
