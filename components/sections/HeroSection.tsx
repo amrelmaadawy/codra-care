@@ -20,10 +20,10 @@ export default function HeroSection() {
           
           {/* Text Content (Right side logically due to RTL) */}
           <div className="flex-1 flex flex-col items-start text-start max-w-2xl">
-            <Badge className="mb-6">Clinic Management System</Badge>
+            <Badge className="mb-6">نظام إدارة العيادات</Badge>
             <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-primary leading-[1.15] sm:text-6xl lg:text-7xl">
-              {title.split('One Platform')[0]} 
-              <span className="text-accent block mt-2">One Platform</span>
+              {title.split('منصة واحدة')[0]} 
+              <span className="text-accent block mt-2">منصة واحدة</span>
             </h1>
             <p className="mb-10 text-lg text-foreground/70 sm:text-xl leading-relaxed max-w-xl">
               {description}
@@ -60,14 +60,14 @@ export default function HeroSection() {
                   <div className="p-4 rounded-xl border border-neutral-dark/20 bg-neutral/50 flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-primary">
                       <Users className="w-4 h-4" />
-                      <span className="text-xs font-semibold">Patients</span>
+                      <span className="text-xs font-semibold">المرضى</span>
                     </div>
                     <span className="text-2xl font-bold">1,248</span>
                   </div>
                   <div className="p-4 rounded-xl border border-neutral-dark/20 bg-neutral/50 flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-accent">
                       <Calendar className="w-4 h-4" />
-                      <span className="text-xs font-semibold">Today&apos;s Appts</span>
+                      <span className="text-xs font-semibold">مواعيد اليوم</span>
                     </div>
                     <span className="text-2xl font-bold">42</span>
                   </div>
@@ -78,7 +78,7 @@ export default function HeroSection() {
                   <div className="flex-1 rounded-xl border border-neutral-dark/20 p-4">
                     <div className="flex items-center gap-2 mb-4 text-primary">
                       <Activity className="w-4 h-4" />
-                      <span className="text-sm font-semibold">Weekly Activity</span>
+                      <span className="text-sm font-semibold">نشاط الأسبوع</span>
                     </div>
                     {/* Fake Chart bars */}
                     <div className="flex items-end gap-2 h-24 pt-4">
@@ -102,8 +102,8 @@ export default function HeroSection() {
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
               <div className="flex flex-col">
-                <span className="text-sm font-bold text-foreground">AI Assistant</span>
-                <span className="text-xs text-foreground/60">Diagnosis Ready</span>
+                <span className="text-sm font-bold text-foreground">المساعد الذكي</span>
+                <span className="text-xs text-foreground/60">التشخيص جاهز</span>
               </div>
             </div>
           </div>
