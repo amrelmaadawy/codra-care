@@ -68,5 +68,109 @@ export const homeContent = {
       { id: 'step-4', title: 'استقبال الحجوزات', description: 'ابدأ بتلقي مواعيد المرضى وإدارة زياراتهم بفعالية.', icon: 'CalendarCheck' },
       { id: 'step-5', title: 'تنمية عيادتك', description: 'استفد من التقارير لرفع الكفاءة وزيادة الأرباح.', icon: 'TrendingUp' }
     ]
+  },
+  analytics: {
+    title: "التحليلات الشاملة",
+    description: "راقب أداء عيادتك واتخذ قرارات مبنية على بيانات دقيقة لحظة بلحظة.",
+    kpis: [
+      { label: "إيرادات اليوم", value: "$2,450" },
+      { label: "المواعيد", value: "42" },
+      { label: "الملغاة", value: "3" },
+      { label: "أداء الأطباء", value: "مكتمل" },
+      { label: "تنبيهات المخزون", value: "5" },
+      { label: "الأرباح", value: "+18%" },
+      { label: "المصروفات", value: "$450" }
+    ]
+  },
+  mobileApp: {
+    title: "عيادتك بين يديك دائماً",
+    description: "تطبيقات مخصصة للهواتف الذكية تناسب كافة المستخدمين لتجربة أكثر مرونة.",
+    apps: [
+      { title: "تطبيق المريض", description: "حجز المواعيد، عرض الوصفات، واستلام التنبيهات.", mock: "patient-app-mockup" },
+      { title: "تطبيق الطبيب", description: "إدارة الجدول، كتابة الملاحظات، والوصول السريع لملف المريض.", mock: "doctor-app-mockup" },
+      { title: "تطبيق الاستقبال", description: "إدارة المواعيد السريعة، الدفع، وتأكيد الحضور.", mock: "reception-app-mockup" }
+    ]
+  },
+  integrations: {
+    title: "تكامل لا متناهي",
+    description: "اربط النظام بأدواتك المفضلة لتجربة عمل متناغمة دون الحاجة للانتقال بين التطبيقات.",
+    items: [
+      { name: "Stripe", icon: "stripe" },
+      { name: "Twilio", icon: "twilio" },
+      { name: "WhatsApp", icon: "whatsapp" },
+      { name: "Google Calendar", icon: "calendar" },
+      { name: "Outlook", icon: "mail" },
+      { name: "SMS", icon: "message" },
+      { name: "Email", icon: "at-sign" },
+      { name: "Zoom", icon: "video" },
+      { name: "Microsoft Teams", icon: "users" },
+      { name: "API", icon: "code" },
+      { name: "Webhooks", icon: "webhook" }
+    ]
+  },
+  security: {
+    title: "الأمان أولاً (Security First)",
+    description: "نحن نضع سرية وأمان بيانات مرضاك على رأس أولوياتنا، مع تطبيق أحدث معايير التشفير العالمية.",
+    features: [
+      { title: "بيانات مشفرة", description: "تشفير عالي الجودة للبيانات (End-to-End).", icon: "Lock" },
+      { title: "صلاحيات دقيقة", description: "تحديد صارم لصلاحيات الوصول لكل مستخدم.", icon: "ShieldAlert" },
+      { title: "سجلات التدقيق", description: "تتبع كل حركة داخل النظام (Audit Logs).", icon: "FileKey" },
+      { title: "نسخ احتياطي آلي", description: "نسخ احتياطي يومي آمن على خوادم سحابية.", icon: "CloudUpload" },
+      { title: "استضافة سحابية", description: "خوادم عالية الموثوقية وموزعة جغرافياً.", icon: "Server" },
+      { title: "متوافق مع HIPAA", description: "يلبي متطلبات حماية البيانات الصحية الأمريكية.", icon: "CheckShield" },
+      { title: "متوافق مع GDPR", description: "يحترم معايير الخصوصية وحماية البيانات الأوروبية.", icon: "GlobeLock" },
+      { title: "مصادقة ثنائية", description: "دخول آمن عبر التحقق بخطوتين (2FA).", icon: "SmartphoneNfc" },
+      { title: "سجلات النشاط", description: "مراقبة نشاطات الموظفين وتسجيل الأخطاء.", icon: "Activity" },
+      { title: "عزل البيانات", description: "بيانات كل عيادة معزولة تماماً (Multi-Tenant).", icon: "Database" }
+    ]
+  },
+  testimonials: {
+    title: "ماذا يقول الأطباء عنا؟",
+    description: "انضم إلى آلاف العيادات التي تعتمد على Codra Care يومياً.",
+    reviews: [
+      { name: "د. أحمد محمد", role: "طبيب أسنان", text: "نظام متكامل ساعدني في تنظيم المواعيد وتقليل وقت الانتظار لمرضاي.", image: "placeholder" },
+      { name: "د. سارة خالد", role: "طبيبة أطفال", text: "سهولة الوصول للسجلات الطبية من أي مكان جعلت عملي أكثر مرونة.", image: "placeholder" },
+      { name: "عيادة الأمل", role: "مجمع طبي متعدد التخصصات", text: "أفضل استثمار قمنا به. الربط بين الصيدلية والمختبر والأطباء ممتاز.", image: "placeholder" }
+    ]
+  },
+  pricing: {
+    title: "خطط أسعار تناسب الجميع",
+    description: "اختر الخطة المناسبة لحجم عيادتك. يمكنك الترقية في أي وقت.",
+    plans: [
+      { id: 'starter', name: "الأساسية (Starter)", price: "$49", period: "/شهر", description: "مثالية للعيادات الفردية والأطباء المستقلين.", features: ["طبيب واحد", "مواعيد غير محدودة", "سجلات المرضى", "بوابة الدفع"], button: "ابدأ تجربتك المجانية", featured: false },
+      { id: 'pro', name: "الاحترافية (Professional)", price: "$99", period: "/شهر", description: "للمجمعات الطبية الصغيرة التي تبحث عن أتمتة كاملة.", features: ["حتى 5 أطباء", "نظام المخزون", "تقارير متقدمة", "تطبيق المرضى", "المساعد الذكي (AI)"], button: "ابدأ تجربتك المجانية", featured: true },
+      { id: 'enterprise', name: "المؤسسات (Enterprise)", price: "مخصص", period: "", description: "للمستشفيات وفروع العيادات المتعددة.", features: ["أطباء غير محدودين", "فروع متعددة", "ربط API مخصص", "مدير حساب شخصي", "دعم فني 24/7"], button: "تواصل معنا", featured: false }
+    ],
+    comparison: {
+      title: "مقارنة المميزات بالتفصيل",
+      features: [
+        { name: "إدارة المواعيد", starter: true, pro: true, enterprise: true },
+        { name: "السجلات الطبية (EMR)", starter: true, pro: true, enterprise: true },
+        { name: "تطبيق الجوال للمرضى", starter: false, pro: true, enterprise: true },
+        { name: "إدارة المخزون والصيدلية", starter: false, pro: true, enterprise: true },
+        { name: "المساعد الذكي (AI)", starter: false, pro: true, enterprise: true },
+        { name: "الفروع المتعددة (Multi-Branch)", starter: false, pro: false, enterprise: true },
+        { name: "دعم فني على مدار الساعة", starter: false, pro: false, enterprise: true }
+      ]
+    }
+  },
+  faq: {
+    title: "الأسئلة الشائعة",
+    description: "إجابات سريعة على أهم استفساراتك.",
+    questions: [
+      { q: "هل يوجد تطبيق للهواتف الذكية؟", a: "نعم، نوفر تطبيقات مخصصة للأطباء، المرضى، وموظفي الاستقبال متوافقة مع أنظمة iOS و Android." },
+      { q: "هل يدعم النظام الفروع المتعددة؟", a: "نعم، خطة المؤسسات (Enterprise) تدعم إدارة الفروع المتعددة بحساب مركزي واحد." },
+      { q: "هل يدعم ربط أجهزة الأشعة (PACS)؟", a: "نعم، يدعم النظام استعراض وأرشفة صور الأشعة بتوافق كامل مع معايير DICOM." },
+      { q: "هل يدعم ربط أجهزة المعامل (LIS)؟", a: "نعم، نوفر ربطاً مباشراً مع العديد من أجهزة التحليل لاستقبال النتائج تلقائياً في ملف المريض." },
+      { q: "هل يوجد API للربط مع أنظمة أخرى؟", a: "نعم، نوفر واجهة برمجية (API) كاملة وموثقة للمؤسسات لتسهيل الربط مع الأنظمة المحاسبية أو التأمينية الخارجية." },
+      { q: "هل يتم أخذ نسخ احتياطية للبيانات (Backup)؟", a: "نعم، نقوم بعمل نسخ احتياطي تلقائي ومشفّر يومياً لضمان عدم ضياع أي بيانات." },
+      { q: "هل يمكنني نقل بياناتي من نظامي القديم؟", a: "بالتأكيد، فريقنا التقني سيساعدك في ترحيل (Migration) كافة بياناتك من نظامك السابق إلى Codra Care." },
+      { q: "هل يوجد دعم فني؟", a: "نعم، نوفر دعماً فنياً عبر المحادثة الفورية والبريد الإلكتروني، ودعماً على مدار الساعة لعملاء خطة المؤسسات." }
+    ]
+  },
+  cta: {
+    title: "مستعد لتحديث عيادتك؟",
+    description: "انضم إلى آلاف الأطباء الذين يثقون في Codra Care لإدارة عياداتهم يومياً. ابدأ تجربتك المجانية الآن ولاحظ الفرق.",
+    button: "ابدأ تجربتك المجانية"
   }
 };

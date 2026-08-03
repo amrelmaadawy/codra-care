@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { Metadata } from 'next';
 import { getSolutionBySlug, solutionsData } from '@/content/solutions';
 import { Container } from '@/components/ui/Container';
@@ -61,8 +62,12 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {solution.hero.description}
             </p>
             <div className="flex flex-wrap items-center gap-4">
-              <Button className="px-8 py-4 text-base">ابدأ تجربتك المجانية</Button>
-              <Button variant="outline" className="px-8 py-4 text-base bg-transparent">احجز عرضاً توضيحياً</Button>
+              <Link href="/book-demo">
+                <Button className="px-8 py-4 text-base">ابدأ تجربتك المجانية</Button>
+              </Link>
+              <Link href="/book-demo">
+                <Button variant="outline" className="px-8 py-4 text-base bg-transparent">احجز عرضاً توضيحياً</Button>
+              </Link>
             </div>
           </div>
         </Container>
@@ -100,9 +105,11 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
             <p className="text-white/80 mb-10 text-lg">
               انضم إلى مئات الأطباء الذين يثقون في منصتنا لإدارة عياداتهم بكفاءة.
             </p>
-            <Button className="px-10 py-4 text-base text-primary bg-white hover:bg-neutral-dark border-transparent">
-              احجز عرضاً توضيحياً
-            </Button>
+            <Link href="/book-demo">
+              <Button className="px-10 py-4 text-base text-primary bg-white hover:bg-neutral-dark border-transparent">
+                احجز عرضاً توضيحياً
+              </Button>
+            </Link>
           </div>
         </Container>
       </section>

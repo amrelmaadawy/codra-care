@@ -8,13 +8,13 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 
 const navLinks = [
-  { name: 'المميزات', href: '#features' },
-  { name: 'الحلول', href: '#solutions' },
-  { name: 'الأسعار', href: '#pricing' },
-  { name: 'التكاملات', href: '#integrations' },
-  { name: 'المصادر', href: '#resources' },
-  { name: 'عن الشركة', href: '#about' },
-  { name: 'تواصل معنا', href: '#contact' },
+  { name: 'المميزات', href: '/#features' },
+  { name: 'الحلول', href: '/#solutions' },
+  { name: 'الأسعار', href: '/pricing' },
+  { name: 'التوثيق', href: '/docs' },
+  { name: 'المدونة', href: '/blog' },
+  { name: 'عن الشركة', href: '/about' },
+  { name: 'تواصل معنا', href: '/contact' },
 ];
 
 export default function Navbar() {
@@ -75,9 +75,11 @@ export default function Navbar() {
             <Link href="/login" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               تسجيل الدخول
             </Link>
-            <Button variant="primary">
-              ابدأ تجربتك المجانية
-            </Button>
+            <Link href="/book-demo">
+              <Button variant="primary">
+                ابدأ تجربتك المجانية
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -118,9 +120,11 @@ export default function Navbar() {
             >
               تسجيل الدخول
             </Link>
-            <Button variant="primary" className="w-full text-lg py-4 mt-2">
-              ابدأ تجربتك المجانية
-            </Button>
+            <Link href="/book-demo" className="w-full" onClick={() => setMobileMenuOpen(false)}>
+              <Button variant="primary" className="w-full text-lg py-4 mt-2">
+                ابدأ تجربتك المجانية
+              </Button>
+            </Link>
           </div>
         </nav>
       </div>

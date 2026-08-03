@@ -5,20 +5,20 @@ import { Container } from '@/components/ui/Container';
 
 const footerLinks = {
   product: [
-    { name: 'المميزات', href: '#features' },
-    { name: 'الحلول', href: '#solutions' },
-    { name: 'الأسعار', href: '#pricing' },
-    { name: 'واجهة برمجة التطبيقات (API)', href: '#api' },
+    { name: 'المميزات', href: '/#features' },
+    { name: 'الحلول', href: '/#solutions' },
+    { name: 'الأسعار', href: '/pricing' },
+    { name: 'واجهة برمجة التطبيقات (API)', href: '/api-docs' },
   ],
   resources: [
-    { name: 'التوثيق (Docs)', href: '#docs' },
-    { name: 'المدونة', href: '#blog' },
-    { name: 'الدعم الفني', href: '#support' },
+    { name: 'التوثيق (Docs)', href: '/docs' },
+    { name: 'المدونة', href: '/blog' },
+    { name: 'مركز المساعدة', href: '/help' },
   ],
   company: [
-    { name: 'عن الشركة', href: '#about' },
-    { name: 'شروط الاستخدام', href: '#terms' },
-    { name: 'سياسة الخصوصية', href: '#privacy' },
+    { name: 'عن الشركة', href: '/about' },
+    { name: 'تواصل معنا', href: '/contact' },
+    { name: 'حالة النظام', href: '/status' },
   ],
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Calendar, Users, Activity } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
@@ -29,13 +30,17 @@ export default function HeroSection() {
               {description}
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4 w-full">
-              <Button variant="primary" className="w-full sm:w-auto h-14 px-8 text-lg group">
-                {ctaPrimary}
-                <ArrowLeft className="h-5 w-5 mr-2 transition-transform group-hover:-translate-x-1" />
-              </Button>
-              <Button variant="outline" className="w-full sm:w-auto h-14 px-8 text-lg">
-                {ctaSecondary}
-              </Button>
+              <Link href="/book-demo" className="w-full sm:w-auto">
+                <Button variant="primary" className="w-full h-14 px-8 text-lg group">
+                  {ctaPrimary}
+                  <ArrowLeft className="h-5 w-5 mr-2 transition-transform group-hover:-translate-x-1" />
+                </Button>
+              </Link>
+              <Link href="/book-demo" className="w-full sm:w-auto">
+                <Button variant="outline" className="w-full h-14 px-8 text-lg">
+                  {ctaSecondary}
+                </Button>
+              </Link>
             </div>
           </div>
 
